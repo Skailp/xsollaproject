@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>about</title>
+</head>
+<body>
+
+<input type="text" id="myInput" onkeyup="myFunction()"
+       placeholder="Name">
+
+<script>
+    function myFunction() {
+        var input,filter,table,tr,td,i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+
+        for (i = 0; i < tr.length; i++) {
+
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+</script>
+
+<table id="myTable" border="1">
+    <thead>
+    <th>Проект</th>
+    <th>Пользователь</th>
+    <th>Платежная система</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>Jack Black</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>e.polyanina</td>
+        <td>QIWI</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>Jack Black</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>e.polyanina</td>
+        <td>Credit\/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>God of Peace</td>
+        <td>john.uniqe</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+
+    <tr>
+        <td>Super Farm</td>
+        <td>karina.newman</td>
+        <td>MobileGo</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>John Smith</td>
+        <td>PayPal</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>John Smith</td>
+        <td>PayPal</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <!--фрафолпофпрфпорфпрфпорпфрплрфлпфпрлфрплрпфрфпрАдпоФлпо-->
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>e.polyanina</td>
+        <td>PayPal</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <!--"id": "xWalletUser",
+  "name": "John Smith"-->
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>xWalletUser</td>
+        <td>Your Balance</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>xWalletUser</td>
+        <td>Your Balance</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>Jack Black</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>Jack Black</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <!--akgkKHGKHGKHGKHGH-->
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>Jack Black</td>
+        <!--NAME? 1674-->
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>d.rozhkov</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td id="sadasdasa">John Smith</td>
+        <td>PayPal</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>sadasdasa</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>d.rozhkov</td>
+        <td>PayPal</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>d.rozhkov</td>
+        <td>PayPal</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>e.polyanina</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>John Smith</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>Jack Black</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>Jack Black</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>World of Xsolla</td>
+        <td>neganova.a</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>World of Xsolla</td>
+        <td>neganova.a</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>World of Xsolla</td>
+        <td>neganova.a</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>World of Xsolla</td>
+        <td>neganova.a</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>World of Xsolla</td>
+        <td>neganova.a</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>World of Xsolla</td>
+        <td>Nastya</td>
+        <td>Your Balance</td>
+    </tr>
+    <tr>
+        <td>World of Xsolla</td>
+        <td>neganova.a</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>World of Xsolla</td>
+        <td>Nastya</td>
+        <td>Your Balance</td>
+    </tr>
+    <tr>
+        <td>Half-Life 3</td>
+        <td>John Smit</td>
+        <td>Webmoney</td>
+    </tr>
+    <tr>
+        <td>Half-Life 3</td>
+        <td>John Smit</td>
+        <td>Google Pay</td>
+    </tr>
+    <!--KGJKHFHFKFFHKFHKFHKFHKFHFFKFHFKHFK-->
+    <tr>
+        <td>Half-Life 3</td>
+        <td>John Smit</td>
+        <td>Google Pay</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>Jack Black</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>ofelia.meadows</td>
+        <td>PayPal</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>ofelia.meadows</td>
+        <td>PayPal</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>Jack Black</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>d.rozhkov</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>d.rozhkov</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Storefront</td>
+        <td>john.uniqe</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>montgomery.quinn</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>vargas.christian</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>d.rozhkov</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>d.rozhkov</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>tran.mills</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>e.polyanina</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>kristin.mcintosh</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>montgomery.quinn</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>montgomery.quinn2</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>montgomery.quinn</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Awesome Game 2</td>
+        <td>Ilya Zubov</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>d.rozhkov</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>d.rozhkov</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>Montoya Thompson</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>d.rozhkov</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>Ilya Zubov</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Awesome Game 2</td>
+        <td>Jack Black</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>d.rozhkov</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>montgomery.quinn</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>montgomery.quinn2</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>d.rozhkov</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>nikulin</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>ofelia.meadows</td>
+        <td>PayPal</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>Jack Black</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <!--JGHJAHKGHGAGHKGHKAHGKHGKH-->
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>Jack Black</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>Jack Black</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>Jack Black</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>Super Farm</td>
+        <td>m.sbeglova</td>
+        <!--"id": "m.sbeglova",
+      "name": "John Smith", 5037-->
+        <td>PayPal</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>ofelia.meadows</td>
+        <td>PayPal</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>ofelia.meadows</td>
+        <td>PayPal</td>
+    </tr>
+    <tr>
+        <td>Half-Life 3</td>
+        <td>John Smit</td>
+        <td>Webmoney</td>
+    </tr>
+    <tr>
+        <td>LiF</td>
+        <td>John Smith</td>
+        <td>RAZER zGOLD</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>John Smith</td>
+        <td>PayPal</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>e.polyanina</td>
+        <td>PayPal</td>
+    </tr>
+    <tr>
+        <td>Red Sauce 3</td>
+        <td>e.polyanina</td>
+        <td>PayPal</td>
+    </tr>
+    <tr>
+        <td>Gemini</td>
+        <td>buy_by_balance</td>
+        <td>Your Balance</td>
+    </tr>
+    <tr>
+        <td>Gemini</td>
+        <td>zip_code</td>
+        <td>Credit/Debit Cards</td>
+    </tr>
+    <tr>
+        <td>World of Xsolla</td>
+        <td>Nastya</td>
+        <td>Your Balance</td>
+    </tr>
+    <tr>
+        <td>World of Xsolla</td>
+        <td>Nastya</td>
+        <td>Your Balance</td>
+    </tr>
+    <tr>
+        <td>World of Xsolla</td>
+        <td>Nastya</td>
+        <td>Your Balance</td>
+    </tr>
+
+    </tbody>
+    <tfoorer></tfoorer>
+</table>
+</body>
+</html>
